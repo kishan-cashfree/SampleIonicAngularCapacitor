@@ -1,27 +1,27 @@
 PODS:
-  - Capacitor (6.2.0):
+  - Capacitor (7.4.2):
     - CapacitorCordova
-  - CapacitorApp (6.0.2):
+  - CapacitorApp (7.0.2):
     - Capacitor
-  - CapacitorCordova (6.2.0)
-  - CapacitorHaptics (6.0.2):
+  - CapacitorCordova (7.4.2)
+  - CapacitorHaptics (7.0.2):
     - Capacitor
-  - CapacitorKeyboard (6.0.3):
+  - CapacitorKeyboard (7.0.2):
     - Capacitor
-  - CapacitorStatusBar (6.0.2):
+  - CapacitorStatusBar (7.0.2):
     - Capacitor
-  - CashfreeAnalyticsSDK (2.0.15):
-    - CFNetworkSDK (~> 2.0.15)
-  - CashfreePG (2.0.19):
-    - CashfreePGUISDK (= 2.0.19)
-  - CashfreePGCoreSDK (2.0.19):
-    - CashfreeAnalyticsSDK (~> 2.0.15)
-  - CashfreePGUISDK (2.0.19):
-    - CashfreePGCoreSDK (= 2.0.19)
-  - CFNetworkSDK (2.0.15)
-  - CordovaPlugins (6.2.0):
+  - CashfreeAnalyticsSDK (2.2.0):
+    - CFNetworkSDK (= 2.2.0)
+  - CashfreePG (2.2.4):
+    - CashfreePGUISDK (= 2.2.4)
+  - CashfreePGCoreSDK (2.2.4):
+    - CashfreeAnalyticsSDK (= 2.2.0)
+  - CashfreePGUISDK (2.2.4):
+    - CashfreePGCoreSDK (= 2.2.4)
+  - CFNetworkSDK (2.2.0)
+  - CordovaPluginsStatic (7.4.2):
     - CapacitorCordova
-    - CashfreePG (~> 2.0.9)
+    - CashfreePG (~> 2.2.4)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
@@ -30,7 +30,7 @@ DEPENDENCIES:
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
-  - CordovaPlugins (from `../capacitor-cordova-ios-plugins`)
+  - CordovaPluginsStatic (from `../capacitor-cordova-ios-plugins`)
 
 SPEC REPOS:
   trunk:
@@ -53,23 +53,23 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/keyboard"
   CapacitorStatusBar:
     :path: "../../node_modules/@capacitor/status-bar"
-  CordovaPlugins:
+  CordovaPluginsStatic:
     :path: "../capacitor-cordova-ios-plugins"
 
 SPEC CHECKSUMS:
-  Capacitor: 1f3c7b9802d958cd8c4eb63895fff85dff2e1eea
-  CapacitorApp: 2a8c3a0b0814322e5e6e15fe595f02c3808f0f8b
-  CapacitorCordova: b33e7f4aa4ed105dd43283acdd940964374a87d9
-  CapacitorHaptics: b53409aaca1203f79c6d0eb3ed5de40556339518
-  CapacitorKeyboard: 460c6f9ec5e52c84f2742d5ce2e67bbc7ab0ebb0
-  CapacitorStatusBar: 3b9ac7d0684770522c532d1158a1434512ab1477
-  CashfreeAnalyticsSDK: 139202f1fd63baae030e4ea5190f687e741e275d
-  CashfreePG: e535f3b83cff4fd7a8e32d8d5c6d0cf31b094a7b
-  CashfreePGCoreSDK: 2168c1df4eb80105e182e140fc8d50937957a472
-  CashfreePGUISDK: a15ab9c3bf3b4154fc5009ffd27c7f17d62bd2e0
-  CFNetworkSDK: a77f15830ba0de6957abdafd82e61b7453705f7f
-  CordovaPlugins: bc2e4d7ccc4ecc5b3c02fb941d5e9f2a873ab63f
+  Capacitor: 156d98aba46ec01dde72c4bbb92fa626837cad29
+  CapacitorApp: efc1e9748a8ea5d3e789cd82a4f451341cc7ac93
+  CapacitorCordova: 5e58d04631bc5094894ac106e2bf1da18a9e6151
+  CapacitorHaptics: 09d96bcb5a2b74ede8fd039b4cdf58fc43dcacf1
+  CapacitorKeyboard: 056bbe3711830ccb782f1705a8ad183b27b6c51e
+  CapacitorStatusBar: 5526833b87fa9c96a2a90c1322bb1f663c04505f
+  CashfreeAnalyticsSDK: ae25b71a54607c920d519103d154d9727ca2c15a
+  CashfreePG: 6554c215b8eabc9fa13e59c847262b8ba6f29ff6
+  CashfreePGCoreSDK: 133e1ba5aeb8a89bf2188eb3312c88fcad084c75
+  CashfreePGUISDK: 5e943fcca20c45b66c9837bbb87ebbfb75c013a5
+  CFNetworkSDK: 4e431b55f607544f5ca45bc1a36a13e602f51841
+  CordovaPluginsStatic: e43822d33f1abc717882b37ca9554fe26131cd4d
 
-PODFILE CHECKSUM: 0381d09167db361ed446a10f049fd27bab1b40b1
+PODFILE CHECKSUM: 2fde40b4adb26836a809ff586d1909a3f8a5ee54
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

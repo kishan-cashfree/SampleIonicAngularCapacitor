@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
-import {CFEnvironment, CFPaymentGateway, CFSession, CFWebCheckoutPayment} from "@awesome-cordova-plugins/cashfree-pg";
+import {CFEnvironment, CFPaymentGateway, CFSession, CFWebCheckoutPayment, CFUPIIntentCheckoutPayment} from "@awesome-cordova-plugins/cashfree-pg";
 
 
 @Component({
@@ -30,5 +30,24 @@ export class HomePage {
             ),
             null)
     )
+  };
+
+  async initiateIntentCheckoutPayment(){
+    const callbacks = {
+        onVerify: function (result:any) {
+            console.log("This is in the SDK Verify: " + JSON.stringify(result));
+        },
+        onError: function (error: any) {
+            console.log("This is in the SDK Error: " + JSON.stringify(error));
+        }
+    };
+    CFPaymentGateway.setCallback(callbacks)
+
+    const upiIntentCheckoutPaymentObject  = new CFUPIIntentCheckoutPayment(
+      new CFSession("session_573UgcO0ItzgFZeFusGhtQ3BYKr2aUAAHJ35aGzNpHKZRVhHyzc6uOPaeJHJvee3Q2o0PvsZdHC3GewejRmtRzue-xBqwNWRoKuwNjQaDS9JKuJTL_oPkE4payment",
+        "order_6099982qej4RHRoeZkekR8y7UVoSeuJQR",
+        CFEnvironment.PRODUCTION),null);
+    console.log("UPIData", JSON.stringify(upiIntentCheckoutPaymentObject))
+    CFPaymentGateway.doUPIPayment(upiIntentCheckoutPaymentObject)
   };
 }
